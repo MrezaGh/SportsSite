@@ -1,6 +1,7 @@
 import React , {Component} from 'react';
 import Navbar from './Navbar'
 import NewsSection from './NewsSection';
+import GamesSection from './GamesSection';
 
 
 class MainPage extends Component {
@@ -55,12 +56,54 @@ class MainPage extends Component {
             body: "yeah that's strange someone stole the stadium and all that is left is a desert with nothing"
         },
     ];
+    endedMatches = [
+        {
+            firstTeam: "Arsenal",
+            firstTeamScore: 2,
+            secondTeam: "Chelsea",
+            secondTeamScore: 1,
+        },
+        {
+            firstTeam: "Manchester",
+            firstTeamScore: 4,
+            secondTeam: "Liverpool",
+            secondTeamScore: 2,
+        },
+        {
+            firstTeam: "Arsenal",
+            firstTeamScore: 0,
+            secondTeam: "Liverpool",
+            secondTeamScore: 0,
+        }
+    ];
+    liveMatches = [
+        {
+            firstTeam: "Arsenal",
+            firstTeamScore: 2,
+            secondTeam: "Chelsea",
+            secondTeamScore: 1,
+        },
+        {
+            firstTeam: "Manchester",
+            firstTeamScore: 4,
+            secondTeam: "Liverpool",
+            secondTeamScore: 2,
+        },
+        {
+            firstTeam: "RealMadrid",
+            firstTeamScore: 0,
+            secondTeam: "Arsenal",
+            secondTeamScore: 0,
+        }
+    ];
 
     render(){
         return(
             <div>
                 <Navbar />
+                <GamesSection endedMatches={this.endedMatches} liveMatches={this.liveMatches}/>
                 <NewsSection latestNews={this.latestNews} favoriteNews={this.favoriteNews}/>
+
             </div>
         );
     }

@@ -1,0 +1,23 @@
+i.icon {
+    background-size: contain;
+    width: 1.5em;
+    height: 1.5em;
+}
+.match-info{
+    font-size: 2em;
+}
+.Arsenal{
+    background-image: url("/arsenal.ico");
+}
+.Chelsea{
+    background-image: url("/chelsea.ico");
+}
+.Liverpool{
+    background-image: url("/liverpool.ico");
+}
+.Manchester{
+    background-image: url("/manchester.ico");
+}
+.RealMadrid {
+    background-image: url("/RealMadrid.png");
+}
