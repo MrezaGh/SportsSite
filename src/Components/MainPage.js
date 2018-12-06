@@ -3,7 +3,6 @@ import Navbar from './Navbar'
 import NewsSection from './NewsSection';
 import GamesSection from './GamesSection';
 
-
 class MainPage extends Component {
     latestNews = [{
         img: 'https://template63454.motopreview.com/mt-demo/63400/63454/mt-content/uploads/2017/05/mt-0966-home-img04.jpg',
@@ -56,54 +55,136 @@ class MainPage extends Component {
             body: "yeah that's strange someone stole the stadium and all that is left is a desert with nothing"
         },
     ];
-    endedMatches = [
-        {
-            firstTeam: "Arsenal",
-            firstTeamScore: 2,
-            secondTeam: "Chelsea",
-            secondTeamScore: 1,
-        },
-        {
-            firstTeam: "Manchester",
-            firstTeamScore: 4,
-            secondTeam: "Liverpool",
-            secondTeamScore: 2,
-        },
-        {
-            firstTeam: "Arsenal",
-            firstTeamScore: 0,
-            secondTeam: "Liverpool",
-            secondTeamScore: 0,
-        }
-    ];
-    liveMatches = [
-        {
-            firstTeam: "Arsenal",
-            firstTeamScore: 2,
-            secondTeam: "Chelsea",
-            secondTeamScore: 1,
-        },
-        {
-            firstTeam: "Manchester",
-            firstTeamScore: 4,
-            secondTeam: "Liverpool",
-            secondTeamScore: 2,
-        },
-        {
-            firstTeam: "RealMadrid",
-            firstTeamScore: 0,
-            secondTeam: "Arsenal",
-            secondTeamScore: 0,
-        }
-    ];
+    matches = {
+        endedMatches: [
+            {
+                firstTeam: "Arsenal",
+                firstTeamScore: 2,
+                secondTeam: "Chelsea",
+                secondTeamScore: 1,
+                date: 'December 6, 2018',
+            },
+            {
+                firstTeam: "Manchester",
+                firstTeamScore: 4,
+                secondTeam: "Liverpool",
+                secondTeamScore: 2,
+                date: 'December 6, 2018',
+            },
+            {
+                firstTeam: "Arsenal",
+                firstTeamScore: 0,
+                secondTeam: "Liverpool",
+                secondTeamScore: 0,
+                date: 'December 6, 2018',
+            }
+        ],
+        liveMatches: [
+            {
+                firstTeam: "Arsenal",
+                firstTeamScore: 2,
+                secondTeam: "Chelsea",
+                secondTeamScore: 1,
+                date: 'December 6, 2018',
+            },
+            {
+                firstTeam: "Manchester",
+                firstTeamScore: 4,
+                secondTeam: "Liverpool",
+                secondTeamScore: 2,
+                date: 'December 6, 2018',
+            },
+            {
+                firstTeam: "RealMadrid",
+                firstTeamScore: 0,
+                secondTeam: "Arsenal",
+                secondTeamScore: 0,
+                date: 'December 6, 2018',
+            }
+        ],
+        comingMatches: [
+            {
+                firstTeam: "AtleticoMadrid",
+                firstTeamScore: 2,
+                secondTeam: "Milan",
+                secondTeamScore: 1,
+                date: 'December 6, 2018',
+            },
+            {
+                firstTeam: "Roma",
+                firstTeamScore: 4,
+                secondTeam: "Atalanta",
+                secondTeamScore: 2,
+                date: 'December 6, 2018',
+            },
+            {
+                firstTeam: "RealMadrid",
+                firstTeamScore: 0,
+                secondTeam: "Milan",
+                secondTeamScore: 0,
+                date: 'December 6, 2018',
+            }
+        ],
+    };
+
+    favoriteMatches = {
+        yesterdayMatches: [
+            {
+                firstTeam: "AtleticoMadrid",
+                firstTeamScore: 2,
+                secondTeam: "Milan",
+                secondTeamScore: 1,
+                date: 'December 6, 2018',
+            },
+            {
+                firstTeam: "Roma",
+                firstTeamScore: 4,
+                secondTeam: "Atalanta",
+                secondTeamScore: 2,
+                date: 'December 6, 2018',
+            },
+        ],
+        todayMatches: [
+            {
+                firstTeam: "Manchester",
+                firstTeamScore: 4,
+                secondTeam: "Liverpool",
+                secondTeamScore: 2,
+                date: 'December 6, 2018',
+            },
+            {
+                firstTeam: "RealMadrid",
+                firstTeamScore: 0,
+                secondTeam: "Arsenal",
+                secondTeamScore: 0,
+                date: 'December 6, 2018',
+            }
+        ],
+        tomorrowMatches: [
+            {
+                firstTeam: "Arsenal",
+                firstTeamScore: 2,
+                secondTeam: "Chelsea",
+                secondTeamScore: 1,
+                date: 'December 6, 2018',
+            },
+            {
+                firstTeam: "Manchester",
+                firstTeamScore: 4,
+                secondTeam: "Liverpool",
+                secondTeamScore: 2,
+                date: 'December 6, 2018',
+            },
+        ],
+    };
+
 
     render(){
         return(
             <div>
                 <Navbar />
-                <GamesSection endedMatches={this.endedMatches} liveMatches={this.liveMatches}/>
+                <GamesSection matches={this.matches} favoriteMatches={this.favoriteMatches}/>
                 <NewsSection latestNews={this.latestNews} favoriteNews={this.favoriteNews}/>
-
             </div>
         );
     }

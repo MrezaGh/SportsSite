@@ -10,12 +10,12 @@ export default class Match extends Component{
             <div className='match-info'>
                 <span>
                     <i className={firstTeamIcon}/>
-                    {firstTeam}
+                    {firstTeam} {firstTeamScore}
                 </span>
                 <span> VS </span>
                 <span>
                     <i className={secondTeamIcon}/>
-                    {secondTeam}
+                    {secondTeam} {secondTeamScore}
                 </span>
             </div>
         );

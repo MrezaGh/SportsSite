@@ -1,7 +1,7 @@
 i.icon {
     background-size: contain;
-    width: 1.5em;
-    height: 1.5em;
+    width: 1.2em;
+    height: 1.2em;
 }
 .match-info{
     font-size: 2em;
@@ -21,3 +21,16 @@ i.icon {
 .RealMadrid {
     background-image: url("/RealMadrid.png");
 }
+.Roma {
+    background-image: url("/Roma.png");
+}
+.Milan {
+    background-image: url("/Milan.png");
+}
+.Atalanta {
+    background-image: url("/Atalanta.png");
+}
+.AtleticoMadrid {
+    background-image: url("/AtleticoMadrid.png");
+}
+

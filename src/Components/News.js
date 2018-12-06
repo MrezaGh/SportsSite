@@ -29,7 +29,7 @@ export default class recipe extends Component{
         const {title, date, body, img} = this.props;
         return(
             <div onClick={this.go.bind(null, title)}>
-            <Card >
+            <Card  >
                 <Image src={img}
                        alt={title} />
                 <Card.Content >

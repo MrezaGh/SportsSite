@@ -1,32 +1,25 @@
 import React , {Component} from 'react';
-import Match from './Match';
-import './GamesSection.css';
+import SoccerGamesSection from './SoccerGamesSection';
+import BasketballGamesSection from './BasketballGamesSection';
 
-class GamesSection extends Component{
+export default class GamesSection extends Component{
 
-    render(){
-        const endedMatches = this.props.endedMatches.map((match, index) => (
-            <Match key={index}
-                   {...match}
-            />
-        ));
-        const liveMatches = this.props.liveMatches.map((match, index) => (
-            <Match key={index}
-                   {...match}
-            />
-        ));
-        return(
+    render() {
+        return (
             <div>
-                <div className='ended-matches'>
-                    Ended Matches
-                    {endedMatches}
-                </div>
-                <div className='live-matches'>
-                    Live Matches
-                    {liveMatches}
-                </div>
+                Soccer Games
+                <SoccerGamesSection endedMatches={this.props.matches.endedMatches}
+                                    liveMatches={this.props.matches.liveMatches}
+                                    comingMatches={this.props.matches.comingMatches}
+                                    favoriteMatches={this.props.favoriteMatches}
+                />
+                Basketball Games
+                <BasketballGamesSection endedMatches={this.props.matches.endedMatches}
+                                        liveMatches={this.props.matches.liveMatches}
+                                        comingMatches={this.props.matches.comingMatches}
+                                        favoriteMatches={this.props.favoriteMatches}
+                />
             </div>
         );
     }
 }
-export default GamesSection;
