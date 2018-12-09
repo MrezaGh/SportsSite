@@ -1,0 +1,14 @@
+.myWidth{
+    max-width: 25%;
+}
+.myLeft{
+    position: absolute;
+    left: 0;
+}
+.myRight{
+    position: relative;
+    left: 75%;
+}
+
+
+
