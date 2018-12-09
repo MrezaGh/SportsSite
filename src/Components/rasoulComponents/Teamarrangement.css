@@ -2,12 +2,11 @@
     max-width: 25%;
 }
 .myLeft{
-    position: absolute;
-    left: 0;
+    direction: ltr;
 }
 .myRight{
-    position: relative;
-    left: 75%;
+    direction: rtl;
+    float: right;
 }
 
 

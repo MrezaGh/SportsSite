@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Navbar from '../Navbar';
 import MyTimeline from './MyTimeline';
 import TeamArrangement from './TeamArrangement';
+import './Teamarrangement.css'
 
 
 class GamePage extends Component {
@@ -98,6 +99,15 @@ class GamePage extends Component {
                 <h1>{this.teamname[0]} &nbsp; &nbsp;{this.teamgoal[0]} &nbsp; &nbsp; &nbsp;&nbsp;{this.teamgoal[1]} &nbsp; &nbsp;{this.teamname[1]}</h1>
                 <MyTimeline teamData={this.teamData}/>
                 <table className="myWidth myRight ui striped table">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <TeamArrangement teamMemberData={this.teamMemberData}/>
+                </table>
+                <table className="myWidth myleft ui striped table">
                     <thead>
                     <tr>
                         <th>Name</th>
