@@ -1,4 +1,4 @@
-import React , {Component} from 'react';
+import React, {Component} from 'react';
 import Navbar from './Navbar'
 import NewsSection from './NewsSection';
 import GamesSection from './GamesSection';
@@ -179,10 +179,10 @@ class MainPage extends Component {
     };
 
 
-    render(){
-        return(
+    render() {
+        return (
             <div>
-                <Navbar />
+                <Navbar/>
                 <GamesSection matches={this.matches} favoriteMatches={this.favoriteMatches}/>
                 <NewsSection latestNews={this.latestNews} favoriteNews={this.favoriteNews}/>
             </div>
@@ -190,4 +190,5 @@ class MainPage extends Component {
     }
 
 }
+
 export default MainPage;
