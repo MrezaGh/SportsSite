@@ -3,10 +3,22 @@
 }
 .myLeft{
     direction: ltr;
+    float: left;
+
 }
 .myRight{
+    text-align: right;
     direction: rtl;
     float: right;
+}
+.myCenter{
+    position: absolute;
+    max-width: 25%;
+    right: 37%;
+    text-align: center;
+}
+.mytextalignright{
+    text-align: right;
 }
 
 

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Menu} from 'semantic-ui-react';
 import './Teamarrangement.css';
 
-export default class TeamArrangement extends Component {
+export default class TeamArrangementright extends Component {
     render() {
         return this.props.teamMemberData.map((data, index) => {
 
@@ -12,7 +12,7 @@ export default class TeamArrangement extends Component {
                 <tbody>
                 <tr className="top aligned">
                     <td>{data.name}</td>
-                    <td className="top aligned">
+                    <td className="top aligned right aligned">
                         {data.yellowtime.length!==0?<div><a className="ui yellow empty circular label"></a>{data.yellowtime[0]}</div>:null}
                         {data.redtime!==0?<div><a className="ui red empty circular label"></a>{data.redtime}</div>:null}
                         {data.timein!==0?<div><i className="arrow circle up icon"></i>{data.timein}</div>:null}

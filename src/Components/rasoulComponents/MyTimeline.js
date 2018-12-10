@@ -24,7 +24,7 @@ export default class MyTimeline extends Component{
                   description={data.happen}
                   color={data.happen==="goal"?"green":data.happen==="red"?"red":"yellow"}
                   tags={[]}
-                  lineHeight={this.props.teamData.length-3}
+                  lineHeight={this.props.teamData.length-2}
 
               />
           );

@@ -1,11 +1,21 @@
 import React, {Component} from 'react';
 import Navbar from '../Navbar';
 import MyTimeline from './MyTimeline';
-import TeamArrangement from './TeamArrangement';
+import TeamArrangementright from './TeamArrangementright';
+import TeamArrangementleft from './TeamArrangementleft';
+
 import './Teamarrangement.css'
+import GameData from "./GameData";
 
 
 class GamePage extends Component {
+    gameData = {
+        goal: [2, 0],
+        khata: [13, 4],
+        korner: [5, 8],
+        pasGoal: [25, 30],
+        darsadMalekiat: [40, 60],
+    };
     teamMemberData = [{
         name: "علی۱",
         timein: 0,
@@ -98,24 +108,45 @@ class GamePage extends Component {
                 <Navbar/>
                 <h1>{this.teamname[0]} &nbsp; &nbsp;{this.teamgoal[0]} &nbsp; &nbsp; &nbsp;&nbsp;{this.teamgoal[1]} &nbsp; &nbsp;{this.teamname[1]}</h1>
                 <MyTimeline teamData={this.teamData}/>
-                <table className="myWidth myRight ui striped table">
+                <table className=" ui striped table">
+                    <GameData gameData={this.gameData}/>
+                </table>
+                <table className="myWidth  myRight ui striped table">
                     <thead>
                     <tr>
-                        <th>Name</th>
+                        <th>اصلی</th>
                         <th></th>
                     </tr>
                     </thead>
-                    <TeamArrangement teamMemberData={this.teamMemberData}/>
-                </table>
-                <table className="myWidth myleft ui striped table">
+                    <TeamArrangementright teamMemberData={this.teamMemberData}/>
+
                     <thead>
                     <tr>
-                        <th>Name</th>
+                        <th>ذخیره</th>
                         <th></th>
                     </tr>
                     </thead>
-                    <TeamArrangement teamMemberData={this.teamMemberData}/>
+                    <TeamArrangementright teamMemberData={this.teamMemberData}/>
                 </table>
+                <table className="myWidth myLeft ui striped table">
+                    <thead>
+                    <tr>
+                        <th>اصلی</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <TeamArrangementleft teamMemberData={this.teamMemberData}/>
+
+                    <thead>
+                    <tr>
+                        <th>اصلی</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <TeamArrangementleft teamMemberData={this.teamMemberData}/>
+                </table>
+
+
             </div>
         );
     }
