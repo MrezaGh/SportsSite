@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Navbar from './Navbar'
+import Navbar from '../Navbar'
 import NewsSection from './NewsSection';
 import GamesSection from './GamesSection';
 
