@@ -1,0 +1,21 @@
+.loose {
+    background-color: lightcoral;
+}
+.win {
+    background-color: lightgreen;
+}
+
+.draw {
+    background-color: grey;
+}
+.score-square {
+    background-color: #282c34;
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.5em;
+    display: inline-block;
+    /*wtf*/
+    line-height: 130%;
+}

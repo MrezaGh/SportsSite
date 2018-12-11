@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import './App.css';
 import 'semantic-ui-css/semantic.min.css';
 
-import MainPage from './Components/MainPage/MainPage';
+// import MainPage from './Components/MainPage/MainPage';
 import TeamPage from './Components/TeamPage/TeamPage';
-import GamePage from './Components/rasoulComponents/GamePage';
+// import GamePage from './Components/rasoulComponents/GamePage';
 
 class App extends Component {
     componentDidMount() {
@@ -15,8 +15,9 @@ class App extends Component {
         return (
             <div className="App">
                 {/*<MainPage />*/}
-                {/*<TeamPage/>//todo*/}
-                <GamePage  />
+                {/*this part is new => team page*/}
+                {/*<TeamPage/>*/}
+                {/*<GamePage  />*/}
             </div>
         );
     }
