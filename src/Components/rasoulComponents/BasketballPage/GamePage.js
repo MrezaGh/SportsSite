@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Navbar from '../Navbar';
+import Navbar from '../../Navbar';
 import MyTimeline from './MyTimeline';
 import TeamArrangementright from './TeamArrangementright';
 import TeamArrangementleft from './TeamArrangementleft';
@@ -12,9 +12,16 @@ class GamePage extends Component {
     gameData = {
         goal: [2, 0],
         khata: [13, 4],
-        korner: [5, 8],
+        out: [50, 80],
         pasGoal: [25, 30],
         darsadMalekiat: [40, 60],
+        partab3movafagh:[40,50],
+        partab2movafagh:[45,60],
+        rewind:[30,20],
+        penaltikhata:[20,10],
+
+
+
     };
     teamMemberData = [{
         name: "علی۱",
@@ -107,7 +114,6 @@ class GamePage extends Component {
             <div>
                 <Navbar/>
                 <h1>{this.teamname[0]} &nbsp; &nbsp;{this.teamgoal[0]} &nbsp; &nbsp; &nbsp;&nbsp;{this.teamgoal[1]} &nbsp; &nbsp;{this.teamname[1]}</h1>
-                <MyTimeline teamData={this.teamData}/>
                 <table className=" ui striped table">
                     <GameData gameData={this.gameData}/>
                 </table>

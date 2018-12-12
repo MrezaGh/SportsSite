@@ -2,9 +2,10 @@ import React, {Component} from 'react';
 import './App.css';
 import 'semantic-ui-css/semantic.min.css';
 
-// import MainPage from './Components/MainPage/MainPage';
-import TeamPage from './Components/TeamPage/TeamPage';
-// import GamePage from './Components/rasoulComponents/GamePage';
+import MainPage from './Components/MainPage/MainPage';
+import FootBallGamePage from './Components/rasoulComponents/FootballPage/GamePage';
+import BasketBallGamePage from './Components/rasoulComponents/BasketballPage/GamePage';
+import NewsPage from './Components/rasoulComponents/NewsPage/NewsPage';
 
 class App extends Component {
     componentDidMount() {
@@ -14,10 +15,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                {/*<MainPage />*/}
-                {/*this part is new => team page*/}
-                {/*<TeamPage/>*/}
-                {/*<GamePage  />*/}
+                <NewsPage />
             </div>
         );
     }
