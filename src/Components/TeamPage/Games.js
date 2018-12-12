@@ -9,7 +9,7 @@ export default class Games extends Component{
     render(){
         return(
             <div >
-                games here
+
                 <Table celled inverted selectable >
                     <Table.Header >
                         <Table.Row >

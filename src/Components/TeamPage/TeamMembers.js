@@ -7,8 +7,8 @@ export default class TeamMembers extends Component{
     render(){
         return(
             <div>
-                faculty
-                <Grid  columns='6'>
+                Team Members
+                <Grid  columns='5'>
                     <Grid.Row >
 
                         <Grid.Column><Player/></Grid.Column>

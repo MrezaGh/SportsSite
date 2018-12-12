@@ -4,11 +4,11 @@
 .ui.card:last-child{
     margin-bottom: 1em;
 }
-.ui.card {
+.ui.card.news-card {
     transition: all 300ms;
     overflow: hidden;
 }
-.ui.card:hover{
+.ui.card.news-card:hover{
     transform: translateY(-10px);
     box-shadow: 3px 7px 10px 3px grey;
 }
@@ -16,7 +16,7 @@
     transition: all 600ms;
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.ui.card .image:hover{
+.ui.card.news-card .image:hover{
     transform: scale(1.1);
 }
 .news-box .card {

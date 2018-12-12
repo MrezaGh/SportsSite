@@ -1,6 +1,6 @@
 import React , {Component} from 'react';
 
-import {Card, Image, Button} from 'semantic-ui-react';
+import {Card, Image} from 'semantic-ui-react';
 import './Player.css';
 
 export default class Player extends Component{
