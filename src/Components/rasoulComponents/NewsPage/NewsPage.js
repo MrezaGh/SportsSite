@@ -8,7 +8,7 @@ import Comment from './Comment'
 export default class NewsPage extends Component {
 
     render() {
-        return (<div>
+        return (<div className="mytextalignright mydirection">
 
                 <Navbar/>
                 <Body />
