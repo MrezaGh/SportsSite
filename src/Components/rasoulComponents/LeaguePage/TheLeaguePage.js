@@ -3,6 +3,7 @@ import {Menu} from 'semantic-ui-react';
 import Navbar from "../../Navbar";
 import './TheLeaguePage.css';
 
+
 export default class TheLeaguePage extends Component {
     sortTable(n) {
         var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
@@ -79,6 +80,11 @@ export default class TheLeaguePage extends Component {
     }
 
 
+    myfunction(){
+        var e=document.getElementById("hello1");
+        var r=e.options[1].value;
+        alert(r);
+    }
     render() {
 
         return <div className="ui two column divided grid mydirection">
@@ -86,6 +92,7 @@ export default class TheLeaguePage extends Component {
                 <div className="twelve wide column">
 
                     <table id="myTable">
+                        <tr ></tr>
                         <tr>
                             <th className="haveclick" onClick={() => this.sortTable(0)}> تیم</th>
                             <th className="haveclick" onClick={() => this.sortTable(1)}> امتیاز</th>
@@ -122,7 +129,7 @@ export default class TheLeaguePage extends Component {
                 < div
                     className="four wide column">
 
-                    <select className="ui search dropdown " onClick={() => this.myfunction()}>
+                    <select id="hello1" className="ui search dropdown ">
                         <option value="">Skills</option>
                         <option value="angular">Angular</option>
                         <option value="css">CSS</option>
@@ -143,7 +150,7 @@ export default class TheLeaguePage extends Component {
                         <option value="ui">UI Design</option>
                         <option value="ux">User Experience</option>
                     </select>
-                    <select className="ui search dropdown">
+                    <select id="hello2" className="ui search dropdown">
                         <option value="۸۵">۸۵</option>
                         <option value="۸۶">۸۶</option>
                         <option value="۸۷">۸۷</option>

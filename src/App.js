@@ -19,7 +19,7 @@ class App extends Component {
             <div className="App">
                 {/*<NewsPage />*/}
                 {/*<TeamPage/>*/}
-                {/*<LeaguePage />*/}
+                <LeaguePage />
             </div>
         );
     }
