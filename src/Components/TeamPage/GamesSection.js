@@ -13,7 +13,7 @@ export default class GamesSection extends Component {
                 <Segment><Icon name="hashtag" color='blue'/>point</Segment>
                 <Segment><Icon name="history" color='brown'/>date</Segment>
             </Segment.Group>
-        )
+        );
         return(
             <Grid columns='1'>
                 <Grid.Row>

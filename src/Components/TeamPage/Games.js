@@ -29,18 +29,6 @@ export default class Games extends Component{
                     </Table.Header>
                     <Table.Body >
                         {showGames}
-                        {/*<Table.Row className='loose'>*/}
-                            {/*<Table.Cell>liverpool <span className="score-square"> 2 </span> vs <span className='score-square'>3</span> chelsea</Table.Cell>*/}
-                            {/*<Table.Cell>December 11, 2018</Table.Cell>*/}
-                        {/*</Table.Row>*/}
-                        {/*<Table.Row className='win'>*/}
-                            {/*<Table.Cell><i className='icon Liverpool'/> liverpool <span className="score-square"> 2 </span> vs <span className='score-square'>3</span> <i className='icon Chelsea'/> chelsea</Table.Cell>*/}
-                            {/*<Table.Cell>December 11, 2018</Table.Cell>*/}
-                        {/*</Table.Row>*/}
-                        {/*<Table.Row className='draw' >*/}
-                            {/*<Table.Cell>liverpool <span className="score-square"> 2 </span> vs <span className='score-square'>3</span> chelsea</Table.Cell>*/}
-                            {/*<Table.Cell>December 11, 2018</Table.Cell>*/}
-                        {/*</Table.Row>*/}
                     </Table.Body>
                 </Table>
             </div>

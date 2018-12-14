@@ -26,16 +26,16 @@ class NewsSection extends Component{
       return(
         <div className='news-box'>
             {/*inja bayad sattelite beshe*/}
-            <div className='news-heading'>
+            <h1 className='playerPage-section-title'>
                 Latest News
-            </div>
+            </h1>
             <div className='news-grid-system'>
                 {latestNews}
             </div>
             {/*if he is logged in visible else hidden*/}
-            <div className='news-heading'>
+            <h1 className='playerPage-section-title'>
                 Favorite News
-            </div>
+            </h1>
             <div className='news-grid-system'>
                 {favoriteNews}
             </div>

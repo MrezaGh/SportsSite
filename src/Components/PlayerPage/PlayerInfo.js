@@ -44,7 +44,7 @@ export default class PlayerInfo extends Component{
                                     </Table.Row>
                                     <Table.Row>
                                         <Table.Cell>Team:</Table.Cell>
-                                        <Table.Cell><a href=''>{info.team}</a></Table.Cell>
+                                        <Table.Cell><a href=''><i className={'icon' + " " + info.team}/>{info.team}</a></Table.Cell>
                                     </Table.Row>
                                     <Table.Row>
                                         <Table.Cell>Nationality:</Table.Cell>

@@ -17,7 +17,7 @@ export default class FootballPlayerPage extends Component{
             age: 33,
             height: "1.87m",
             weight: "80kg",
-            team: "juventus",
+            team: "Arsenal",
             nationality: "portuguese",
             post: "Forward",
         };

@@ -21,12 +21,15 @@ class App extends Component {
             <div className="App">
 
                 {/*<MainPage/>*/}
-                <TeamPage/>
+                {/*<TeamPage/>*/}
                 {/*<FootballPlayerPage/>*/}
                 {/*<BasketballPlayerPage/>*/}
+                {/*warning in console*/}
                 {/*<LeaguePage />*/}
                 {/*<NewsPage />*/}
+                {/*warning in console*/}
                 {/*<FootBallGamePage/>*/}
+                {/*warning in console*/}
                 {/*<BasketBallGamePage/>*/}
 
 
