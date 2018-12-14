@@ -3,7 +3,7 @@ import {Menu} from 'semantic-ui-react';
 import './NewsPage.css';
 import './Comment.css'
 
-export default class NewsPage extends Component {
+export default class Comment extends Component {
 
     render() {
 

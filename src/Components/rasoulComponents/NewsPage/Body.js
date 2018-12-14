@@ -3,7 +3,7 @@ import {Menu} from 'semantic-ui-react';
 import './NewsPage.css';
 import Navbar from "../../Navbar";
 
-export default class NewsPage extends Component {
+export default class Body extends Component {
 
     render() {
         return (
