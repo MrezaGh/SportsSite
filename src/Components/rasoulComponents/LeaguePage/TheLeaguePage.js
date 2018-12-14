@@ -79,12 +79,6 @@ export default class TheLeaguePage extends Component {
         }
     }
 
-
-    myfunction(){
-        var e=document.getElementById("hello1");
-        var r=e.options[1].value;
-        alert(r);
-    }
     render() {
 
         return <div className="ui two column divided grid mydirection">
@@ -92,7 +86,7 @@ export default class TheLeaguePage extends Component {
                 <div className="twelve wide column">
 
                     <table id="myTable">
-                        <tr ></tr>
+
                         <tr>
                             <th className="haveclick" onClick={() => this.sortTable(0)}> تیم</th>
                             <th className="haveclick" onClick={() => this.sortTable(1)}> امتیاز</th>
