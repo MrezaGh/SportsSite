@@ -7,7 +7,7 @@ export default class TeamMembers extends Component{
     render(){
         return(
             <div>
-                Team Members
+                <h1 className='playerPage-section-title'>Team Members</h1>
                 <Grid  columns='5'>
                     <Grid.Row >
 

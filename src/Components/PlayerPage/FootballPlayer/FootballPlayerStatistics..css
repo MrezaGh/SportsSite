@@ -1,0 +1,4 @@
+
+.dropdown-stats .visible.menu > [role='option'] > .text {
+    padding-right: 1em;
+}

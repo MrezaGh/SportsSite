@@ -6,6 +6,10 @@ import MainPage from './Components/MainPage/MainPage';
 import FootBallGamePage from './Components/rasoulComponents/FootballPage/GamePage';
 import BasketBallGamePage from './Components/rasoulComponents/BasketballPage/GamePage';
 import NewsPage from './Components/rasoulComponents/NewsPage/NewsPage';
+import TeamPage from "./Components/TeamPage/TeamPage";
+import FootballPlayerPage from './Components/PlayerPage/FootballPlayer/FootballPlayerPage';
+import BasketballPlayerPage from './Components/PlayerPage/BasketballPlayer/BasketballPlayerPage';
+
 
 class App extends Component {
     componentDidMount() {
@@ -15,7 +19,10 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <NewsPage />
+                {/*<NewsPage />*/}
+                {/*<TeamPage/>*/}
+                {/*<FootballPlayerPage/>*/}
+                {/*<BasketballPlayerPage/>*/}
             </div>
         );
     }

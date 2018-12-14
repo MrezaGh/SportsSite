@@ -20,7 +20,7 @@ export default class NewsSection extends Component {
 
         return(
             <Grid container>
-                Related News
+                <h1 className='playerPage-section-title'>Related News</h1>
                 <Grid.Row >
                 {news}
                 </Grid.Row>
