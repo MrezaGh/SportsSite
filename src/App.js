@@ -19,6 +19,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
+
                 {/*<MainPage/>*/}
                 <TeamPage/>
                 {/*<FootballPlayerPage/>*/}
@@ -27,6 +28,7 @@ class App extends Component {
                 {/*<NewsPage />*/}
                 {/*<FootBallGamePage/>*/}
                 {/*<BasketBallGamePage/>*/}
+
 
 
 
