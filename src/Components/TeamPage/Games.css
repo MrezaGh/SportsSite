@@ -8,6 +8,9 @@
 .draw {
     background-color: grey;
 }
+.unknown {
+    /*background-color: cyan;*/
+}
 .score-square {
     background-color: #282c34;
     height: 2rem;

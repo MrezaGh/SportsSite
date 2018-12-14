@@ -54,22 +54,221 @@ export default class TeamPage extends Component{
                 date: new Date().toDateString(),
             },
         ];
+        const previousGames = [
+            {
+                host: 'Liverpool',
+                guest: 'Chelsea',
+                hostScore: 2,
+                guestScore: 3,
+                date: new Date().toDateString(),
+                status: 'loose',
+            },
+            {
+                host: 'Arsenal',
+                guest: 'Manchester',
+                hostScore: 4,
+                guestScore: 1,
+                date: new Date().toDateString(),
+                status: 'win',
+            },
+            {
+                host: 'RealMadrid',
+                guest: 'AtleticoMadrid',
+                hostScore: 2,
+                guestScore: 2,
+                date: new Date().toDateString(),
+                status: 'draw',
+            },
+            {
+                host: 'Milan',
+                guest: 'Roma',
+                hostScore: 3,
+                guestScore: 2,
+                date: new Date().toDateString(),
+                status: 'win',
+            },
+            {
+                host: 'Milan',
+                guest: 'Roma',
+                hostScore: 3,
+                guestScore: 2,
+                date: new Date().toDateString(),
+                status: 'win',
+            },
+            {
+                host: 'Milan',
+                guest: 'Roma',
+                hostScore: 1,
+                guestScore: 2,
+                date: new Date().toDateString(),
+                status: 'loose',
+            },
+        ];
+        const futureGames = [
+            {
+                host: 'Liverpool',
+                guest: 'Chelsea',
+                hostScore: '-',
+                guestScore: '-',
+                date: new Date().toDateString(),
+                status: 'unknown',
+            },
+            {
+                host: 'Arsenal',
+                guest: 'Manchester',
+                hostScore: '-',
+                guestScore: '-',
+                date: new Date().toDateString(),
+                status: 'unknown',
+            },
+            {
+                host: 'RealMadrid',
+                guest: 'AtleticoMadrid',
+                hostScore: '-',
+                guestScore: '-',
+                date: new Date().toDateString(),
+                status: 'unknown',
+            },
+            {
+                host: 'Milan',
+                guest: 'Roma',
+                hostScore: '-',
+                guestScore: '-',
+                date: new Date().toDateString(),
+                status: 'unknown',
+            },
+            {
+                host: 'Milan',
+                guest: 'Roma',
+                hostScore: '-',
+                guestScore: '-',
+                date: new Date().toDateString(),
+                status: 'unknown',
+            },
+            {
+                host: 'Milan',
+                guest: 'Roma',
+                hostScore: '-',
+                guestScore: '-',
+                date: new Date().toDateString(),
+                status: 'unknown',
+            },
+
+        ];
+        const teamMembers = [
+            {
+                name: "Taylor Swift",
+                image: '/taylorSwift.jpg',
+                role: 'Player',
+                post: 'Attacker',
+                age: '25',
+            },
+            {
+                name: "Taylor Swift",
+                image: '/taylorSwift.jpg',
+                role: 'Player',
+                post: 'Attacker',
+                age: '25',
+            },
+            {
+                name: "Taylor Swift",
+                image: '/taylorSwift.jpg',
+                role: 'Player',
+                post: 'Attacker',
+                age: '25',
+            },
+            {
+                name: "Taylor Swift",
+                image: '/taylorSwift.jpg',
+                role: 'Player',
+                post: 'Attacker',
+                age: '25',
+            },
+            {
+                name: "Taylor Swift",
+                image: '/taylorSwift.jpg',
+                role: 'Player',
+                post: 'Attacker',
+                age: '25',
+            },
+            {
+                name: "Taylor Swift",
+                image: '/taylorSwift.jpg',
+                role: 'Player',
+                post: 'Attacker',
+                age: '25',
+            },
+            {
+                name: "Taylor Swift",
+                image: '/taylorSwift.jpg',
+                role: 'Player',
+                post: 'Attacker',
+                age: '25',
+            },{
+                name: "Taylor Swift",
+                image: '/taylorSwift.jpg',
+                role: 'Player',
+                post: 'Attacker',
+                age: '25',
+            },{
+                name: "Taylor Swift",
+                image: '/taylorSwift.jpg',
+                role: 'Player',
+                post: 'Attacker',
+                age: '25',
+            },{
+                name: "Taylor Swift",
+                image: '/taylorSwift.jpg',
+                role: 'Player',
+                post: 'Attacker',
+                age: '25',
+            },
+            {
+                name: "Taylor Swift",
+                image: '/taylorSwift.jpg',
+                role: 'Player',
+                post: 'Attacker',
+                age: '25',
+            },
+            {
+                name: 'Johnny',
+                image: "https://image.freepik.com/free-vector/doctor-background-design_1270-62.jpg",
+                role: 'Doctor',
+            },
+            {
+                name: 'Hasan Khafan',
+                image: "https://cdn4.vectorstock.com/i/1000x1000/20/68/cartoon-bodybuilder-vector-5592068.jpg",
+                role: 'BodyBuilder',
+            },
+            {
+                name: 'oos mamad',
+                image: "https://previews.123rf.com/images/scotttalent/scotttalent1311/scotttalent131100338/24070260-coach.jpg",
+                role: 'Coach',
+            },
+        ];
         return(
             <div>
                 <Navbar/>
+
                 <TeamIntro info={teamInfo} />
+
                 <Divider />
                 <Grid columns='2'>
                     <Grid.Row >
                         <Grid.Column computer={11}>
-                            <TeamMembers/>
+
+                            <TeamMembers members={teamMembers}/>
+
                         </Grid.Column>
                         <Grid.Column computer={5}>
-                            <GamesSection/>
+
+                            <GamesSection previousGames={previousGames} futureGames={futureGames}/>
+
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
                 <Divider/>
+
                 <NewsSection news={news}/>
             </div>
         );

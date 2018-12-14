@@ -79,7 +79,7 @@ export default class BasketballPlayerPage extends Component{
                 <PlayerInfo info={playerInfo}/>
 
                 <Divider/>
-                <div className='ball-image parallax'>
+                <div className='basketball-image parallax'>
                     <div className='parallax-caption'>Biography & Stats</div>
                 </div>
                 <Divider/>
@@ -98,7 +98,7 @@ export default class BasketballPlayerPage extends Component{
                     </Grid.Row>
                 </Grid>
                 <Divider/>
-                <div className='ball-image parallax'>
+                <div className='basketball-image parallax'>
                     <div className='parallax-caption'>News</div>
                 </div>
                 <Divider/>

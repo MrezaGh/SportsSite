@@ -31,3 +31,12 @@
 .player-icon {
     background-image: url("/player.png");
 }
+.Doctor {
+    background-image: url("/doctor.png");
+}
+.BodyBuilder{
+    background-image: url("/bodybuilder.png");
+}
+.Coach {
+    background-image: url("/coach.png");
+}
