@@ -1,7 +1,7 @@
 from rest_framework import generics
 
-from .models import TeamData,NewsPage,Comment
-from .serializer import TeamDataSerializer,NewsPageSerializer,CommentSerializer
+from .models import TeamData, NewsPage, Comment
+from .serializer import TeamDataSerializer, NewsPageSerializer, CommentSerializer
 
 
 class Teamdata(generics.ListCreateAPIView):

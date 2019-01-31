@@ -1,11 +1,15 @@
 from django.contrib.auth.models import User
 from django.db import models
+from django.utils.timezone import now
 
 
 # Create your models here.
-class TeamData(models.Model):
+class TeamData(models.Model):  # I edited this
     name = models.CharField(max_length=200)
-    year = models.IntegerField()
+    image = models.CharField(max_length=200)  # edited
+    dateCreated = models.DateTimeField(default=now)  # edited
+    location = models.CharField(max_length=100)  # new
+    description = models.TextField(default='NA')  # new
     games = models.IntegerField()
     score = models.IntegerField()
     win = models.IntegerField()
@@ -38,3 +42,44 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.first_name + " " + self.last_name
+
+
+# just completing all the models we need
+class News(models.Model):
+    img = models.CharField(max_length=200)  # url
+    date = models.DateTimeField(default=now)
+    title = models.CharField(max_length=100)
+    body = models.CharField(max_length=1000)
+
+
+class Match(models.Model):
+    teams = models.ManyToManyField(TeamData)
+    firstTeamScore = models.IntegerField()
+    secondTeamSocre = models.IntegerField()
+    date = models.DateTimeField(default=now)
+
+
+class Player(models.Model):
+    image = models.CharField(max_length=200)
+    name = models.CharField(max_length=200)
+    age = models.IntegerField()
+    height = models.CharField(max_length=10)
+    weigth = models.CharField(max_length=10)
+    team = models.ForeignKey(TeamData, on_delete=models.CASCADE)
+    nationality = models.CharField(max_length=50)
+    post = models.CharField
+    goal = models.IntegerField()
+    assist = models.IntegerField()
+    yellowCard = models.IntegerField()
+    redCard = models.IntegerField()
+    biography = models.CharField(max_length=2000)
+
+
+class TeamMember(models.Model):
+    name = models.CharField(max_length=200)
+    image = models.CharField(max_length=200)
+    role = models.CharField(max_length=50)
+    post = models.CharField
+    age = models.IntegerField()
+
+
