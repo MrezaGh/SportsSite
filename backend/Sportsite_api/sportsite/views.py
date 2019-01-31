@@ -1,14 +1,20 @@
 from rest_framework import generics
 
-from .models import TeamData
-from .serializer import TeamDataSerializer
+from .models import TeamData,NewsPage,Comment
+from .serializer import TeamDataSerializer,NewsPageSerializer,CommentSerializer
 
 
-class ListTodo(generics.ListCreateAPIView):
+class Teamdata(generics.ListCreateAPIView):
     queryset = TeamData.objects.all()
     serializer_class = TeamDataSerializer
 
 
-class DetailTodo(generics.RetrieveUpdateDestroyAPIView):
-    queryset = TeamData.objects.all()
-    serializer_class = TeamDataSerializer
+class Newspage(generics.ListCreateAPIView):
+    queryset = NewsPage.objects.all()
+    serializer_class = NewsPageSerializer
+
+
+class Comment(generics.ListCreateAPIView):
+    queryset = Comment.objects.all()
+    serializer_class = CommentSerializer
+
